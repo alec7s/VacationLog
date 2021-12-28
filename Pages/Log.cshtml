@@ -1,0 +1,7 @@
+﻿@page "/{title}"
+@model VacationLog.Pages.LogModel
+@{
+	ViewData["Title"] = @Model.vacation.Title;
+}
+
+<partial name="_Log" model= "@Model.vacation" />
