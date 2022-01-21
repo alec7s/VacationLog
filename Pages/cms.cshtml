@@ -4,46 +4,70 @@
 	ViewData["Title"] = "CMS";
 }
 
-<form>
+<form method="post">
 
-	<label for="title">Name of vacation:</label>
-	<input type="text" id="title" name="title" />
+	<label for="Title">Name of vacation:</label>
+	<input type="text" id="Title" name="Title" maxlength="30" size="30" required />
 
 	<label for="year">Year:</label>
-	<input type="number" id="year" name="year" />
+	<select name="year" id="year" required>
+		<option value="2022">2022</option>
+		<option value="2021">2021</option>
+		<option value="2020">2020</option>
+		<option value="2019">2019</option>
+		<option value="2018">2018</option>
+		<option value="2017">2017</option>
+		<option value="2016">2016</option>
+		<option value="2015">2015</option>
+		<option value="2014">2014</option>
+		<option value="2013">2013</option>
+	</select>
 
 	<label for="month">Month:</label>
-	<input type="text" id="month" name="month" />
+	<select name="month" id="month" required>
+		<option value="January">January</option>
+		<option value="February">February</option>
+		<option value="March">March</option>
+		<option value="April">April</option>
+		<option value="May">May</option>
+		<option value="June">June</option>
+		<option value="July">July</option>
+		<option value="August">August</option>
+		<option value="September">September</option>
+		<option value="October">October</option>
+		<option value="November">November</option>
+		<option value="December">December</option>
+	</select>
 
 	<label for="description">Description/article:</label>
-	<textarea id="description" name="description" rows="10" cols="50"></textarea>
+	<textarea id="description" name="description" rows="10" cols="50" maxlength="2000" required></textarea>
 
 	<label for="image1">Upload Image 1:</label>
-	<input type="file" id="image1" name="image1" />
+	<input type="file" id="image1" name="image1" required />
 
 	<label for="caption1">Image 1 Caption:</label>
-	<input type="text" id="caption1" name="caption1"/>
+	<input type="text" id="caption1" name="caption1" maxlength="60" size="60" required />
 
 	<label for="altText1">Alt Text for Image 1:</label>
-	<input type="text" id="altText1" name="altText1"/>
+	<input type="text" id="altText1" name="altText1" maxlength="120" size="120" required />
 
 	<label for="image2">Upload Image 2:</label>
-	<input type="file" id="image2" name="image2" />
+	<input type="file" id="image2" name="image2" required />
 
 	<label for="caption2">Image 2 Caption:</label>
-	<input type="text" id="caption2" name="caption2"/>
+	<input type="text" id="caption2" name="caption2" maxlength="60" size="60" required />
 
 	<label for="altText2">Alt Text for Image 2:</label>
-	<input type="text" id="altText2" name="altText2"/>
+	<input type="text" id="altText2" name="altText2" maxlength="120" size="120" required />
 
 	<label for="image3">Upload Image 3:</label>
-	<input type="file" id="image3" name="image3" />
+	<input type="file" id="image3" name="image3" required />
 
 	<label for="caption3">Image 3 Caption:</label>
-	<input type="text" id="caption3" name="caption3"/>
+	<input type="text" id="caption3" name="caption3" maxlength="60" size="60" required />
 
 	<label for="altText3">Alt Text for Image 3:</label>
-	<input type="text" id="altText3" name="altText3"/>
+	<input type="text" id="altText3" name="altText3" maxlength="120" size="120" required />
 
 	<input type="submit" value="Submit" />
 </form>

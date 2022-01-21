@@ -227,3 +227,11 @@ tr td:last-child {
 input, label {
     display: block;
 }
+
+input {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-top: 15px;
+}
