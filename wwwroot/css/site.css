@@ -223,3 +223,7 @@ tr td:last-child {
     border-top: 1px solid #23281F;
     border-radius: 5px;
 }
+ 
+input, label {
+    display: block;
+}

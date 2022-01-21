@@ -1,0 +1,49 @@
+﻿@page "@/{title}"
+@model VacationLog.Pages.cmsModel
+@{
+	ViewData["Title"] = "CMS";
+}
+
+<form>
+
+	<label for="title">Name of vacation:</label>
+	<input type="text" id="title" name="title" />
+
+	<label for="year">Year:</label>
+	<input type="number" id="year" name="year" />
+
+	<label for="month">Month:</label>
+	<input type="text" id="month" name="month" />
+
+	<label for="description">Description/article:</label>
+	<textarea id="description" name="description" rows="10" cols="50"></textarea>
+
+	<label for="image1">Upload Image 1:</label>
+	<input type="file" id="image1" name="image1" />
+
+	<label for="caption1">Image 1 Caption:</label>
+	<input type="text" id="caption1" name="caption1"/>
+
+	<label for="altText1">Alt Text for Image 1:</label>
+	<input type="text" id="altText1" name="altText1"/>
+
+	<label for="image2">Upload Image 2:</label>
+	<input type="file" id="image2" name="image2" />
+
+	<label for="caption2">Image 2 Caption:</label>
+	<input type="text" id="caption2" name="caption2"/>
+
+	<label for="altText2">Alt Text for Image 2:</label>
+	<input type="text" id="altText2" name="altText2"/>
+
+	<label for="image3">Upload Image 3:</label>
+	<input type="file" id="image3" name="image3" />
+
+	<label for="caption3">Image 3 Caption:</label>
+	<input type="text" id="caption3" name="caption3"/>
+
+	<label for="altText3">Alt Text for Image 3:</label>
+	<input type="text" id="altText3" name="altText3"/>
+
+	<input type="submit" value="Submit" />
+</form>
