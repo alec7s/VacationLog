@@ -10,7 +10,10 @@ namespace VacationLog.Models
             {
                 //LOG PAGE CONTENT
                 //EACH STRING ITEM IN DESCRIPTION LIST IS A PARAGRAPH TO APPEAR ON THE LOG PAGE FOR THE VACATION
-                new Vacation(page: "Chincoteague", title: "Chincoteague", year: 2018, month: "August", 
+                new Vacation(
+                    id: 1,
+                    author: "alec7s",
+                    page: "Chincoteague", title: "Chincoteague", year: 2018, month: "August", 
                     imageAltTexts: new List<string>{
                         @"Walkway to beach with water in distance",
                         @"Campsite on beach at First Landing State Park",
@@ -30,7 +33,10 @@ namespace VacationLog.Models
                     }
                 ),
 
-                new Vacation(page: "California", title: "California", year: 2019, month: "February",
+                new Vacation(
+                    id: 2,
+                    author: "alec7s",
+                    page: "California", title: "California", year: 2019, month: "February",
                     imageAltTexts: new List<string>{
                         @"Mountainous and rocky dessert area with palm trees at Joshua Tree National Park",
                         @"Looking up from the bottom of a grove of Sequoia trees in the snow at Sequoia National Park",
@@ -53,7 +59,10 @@ namespace VacationLog.Models
                     }
                 ),
 
-                new Vacation(page: "Asheville", title: "Asheville and Knoxville", year: 2019, month: "November",
+                new Vacation(
+                    id: 3,
+                    author: "alec7s",
+                    page: "Asheville", title: "Asheville and Knoxville", year: 2019, month: "November",
                     imageAltTexts: new List<string>{
                         @"Close-up of crevice between boulders",
                         @"Valley with small mountains, river, and barren trees",
@@ -71,7 +80,10 @@ namespace VacationLog.Models
                         @"Our final stop was in Roanoke on the way home, where we hiked and reflected on the fun memories from our trip south." 
                     }
                 ),
-                new Vacation(page: "NewEngland",title: "New England", year: 2021, month: "August",
+                new Vacation(
+                    id: 4,
+                    author: "alec7s",
+                    page: "NewEngland",title: "New England", year: 2021, month: "August",
                     imageAltTexts: new List<string>{
                         @"Rocky beach cove with small boats in Maine",
                         @"Rocky trail sloping downhill and foggy mountain vista in New Hampshire",
