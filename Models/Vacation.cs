@@ -8,10 +8,9 @@
         public string Title { get; set; }
         public int Year { get; set; }
         public string Month { get; set; }
-        public List<string> ImageAltTexts { get; set; }
-        public List<string> ImageCaptions { get; set; }
+        public List<Image> Images { get; set; }
         public List<string> Description { get; set; }
-        public Vacation(int id, string author, string page, string title, int year, string month, List<string> imageAltTexts, List<string> imageCaptions, List<string> description)
+        public Vacation(int id, string author, string page, string title, int year, string month, List<Image> images, List<string> description)
         {
             Id = id;
             Author = author;
@@ -19,9 +18,13 @@
             Title = title;
             Year = year;
             Month = month;
-            ImageAltTexts = imageAltTexts;
-            ImageCaptions = imageCaptions;
+            Images = images;
             Description = description;
+            
+            foreach(Image img in images)
+            {
+                img.setPath(page);
+            }
         }
     }
 }
