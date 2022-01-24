@@ -1,6 +1,5 @@
 ﻿@model VacationLog.Models.Vacation
 @{
-	string fileExt = ".jpg";
 }
 	<h2 style="text-align: left;margin-left: 0% ">@Model.Title</h2>
 
@@ -12,22 +11,21 @@
 	<div id="overview-carousel" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active" data-interval="10000">
-				<img class="d-block w-100" src="~/Assets/@Model.Page/1-@Model.Page@fileExt" alt="@Model.ImageAltTexts[0]">
+				<img class="d-block w-100" src="@Model.Images[0].Path" alt="@Model.Images[0].AltText">
 				<div class="polaroid-box">
-					<p class="slideshow-caption">@Model.ImageCaptions[0]</p>
-				</div>
-
-			</div>
-			<div class="carousel-item" data-interval="10000">
-				<img class="d-block w-100" src="~/Assets/@Model.Page/2-@Model.Page@fileExt" alt="@Model.ImageAltTexts[1]">
-				<div class="polaroid-box">
-					<p class="slideshow-caption">@Model.ImageCaptions[1]</p>
+					<p class="slideshow-caption">@Model.Images[0].Caption</p>
 				</div>
 			</div>
 			<div class="carousel-item" data-interval="10000">
-				<img class="d-block w-100" src="~/Assets/@Model.Page/3-@Model.Page@fileExt" alt="@Model.ImageAltTexts[2]">
+				<img class="d-block w-100" src="@Model.Images[1].Path" alt="@Model.Images[1].AltText">
 				<div class="polaroid-box">
-					<p class="slideshow-caption">@Model.ImageCaptions[2]</p>
+					<p class="slideshow-caption">@Model.Images[1].Caption</p>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="10000">
+				<img class="d-block w-100" src="@Model.Images[2].Path" alt="@Model.Images[2].AltText">
+				<div class="polaroid-box">
+					<p class="slideshow-caption">@Model.Images[2].Caption</p>
 				</div>
 			</div>
 		</div>

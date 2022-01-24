@@ -23,7 +23,7 @@
             
             foreach(Image img in images)
             {
-                img.setPath(page);
+                img.Path = $"~/Assets/{page}/{img.Id}-{page}.jpg";
             }
         }
     }
